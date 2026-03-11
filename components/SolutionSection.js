@@ -30,6 +30,7 @@ export default function SolutionSection() {
           style={{
             color: 'var(--ink)',
             marginBottom: 48,
+            textAlign: 'center',
           }}
         >
           15,000원으로 올라타는

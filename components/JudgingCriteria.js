@@ -33,6 +33,7 @@ export default function JudgingCriteria() {
           style={{
             color: 'var(--ink)',
             marginBottom: 48,
+            textAlign: 'center',
           }}
         >
           루프는 이렇게 심사합니다
@@ -113,6 +114,7 @@ export default function JudgingCriteria() {
             display: 'flex',
             flexDirection: 'column',
             gap: 4,
+            textAlign: 'center',
           }}
         >
           <p style={{ color: 'var(--stone)', fontSize: 13, fontWeight: 300 }}>

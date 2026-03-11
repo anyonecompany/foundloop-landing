@@ -17,7 +17,7 @@ export default function Hero() {
         padding: '0 32px',
       }}
     >
-      <div style={{ maxWidth: 720 }}>
+      <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
         {/* Badge */}
         <div
           style={{

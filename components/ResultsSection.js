@@ -25,6 +25,7 @@ export default function ResultsSection() {
           style={{
             color: 'var(--ink)',
             marginBottom: 48,
+            textAlign: 'center',
           }}
         >
           루프에서 만들 수 있는 것들

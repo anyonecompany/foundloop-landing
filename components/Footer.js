@@ -11,7 +11,7 @@ export default function Footer() {
     >
       <div style={{ maxWidth: 1080, margin: '0 auto' }}>
         {/* Logo */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 2, marginBottom: 12 }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 2, marginBottom: 12 }}>
           <img
             src="/FOUNDLOOP_logo.png"
             alt="FOUNDLOOP"
@@ -27,6 +27,7 @@ export default function Footer() {
             fontSize: 13,
             fontWeight: 300,
             marginBottom: 32,
+            textAlign: 'center',
           }}
         >
           {BRAND.tagline}

@@ -26,6 +26,7 @@ export default function SocialProof() {
           style={{
             color: 'var(--ink)',
             marginBottom: 32,
+            textAlign: 'center',
           }}
         >
           지금 루프에 올라탄 파운더들
@@ -40,6 +41,7 @@ export default function SocialProof() {
             letterSpacing: '-0.04em',
             lineHeight: 1,
             marginBottom: 8,
+            textAlign: 'center',
           }}
         >
           현재 12명 개인 참가 신청
@@ -48,7 +50,7 @@ export default function SocialProof() {
         {/* Badge */}
         <div
           style={{
-            display: 'inline-block',
+            display: 'block',
             background: 'var(--yolk-orange)',
             color: 'var(--shell-white)',
             fontSize: 13,
@@ -56,6 +58,7 @@ export default function SocialProof() {
             padding: '6px 16px',
             borderRadius: 4,
             marginBottom: 40,
+            textAlign: 'center',
           }}
         >
           개인 신청 → 킥오프에서 팀 매칭 · 지금 신청하면 매칭 가능

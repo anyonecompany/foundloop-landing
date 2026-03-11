@@ -30,6 +30,7 @@ export default function PrizeAnchor() {
             letterSpacing: '0.02em',
             textTransform: 'uppercase',
             marginBottom: 16,
+            textAlign: 'center',
           }}
         >
           이번 루프 상금 풀
@@ -44,6 +45,7 @@ export default function PrizeAnchor() {
             letterSpacing: '-0.04em',
             lineHeight: 1.1,
             marginBottom: 12,
+            textAlign: 'center',
           }}
         >
           ₩ 360,000
@@ -56,6 +58,7 @@ export default function PrizeAnchor() {
             fontSize: 13,
             fontWeight: 300,
             marginBottom: 32,
+            textAlign: 'center',
           }}
         >
           참가자 24명 × 15,000원 × 80% = 이번 주 상금
@@ -77,6 +80,7 @@ export default function PrizeAnchor() {
             fontSize: 15,
             fontWeight: 600,
             marginBottom: 20,
+            textAlign: 'center',
           }}
         >
           1등이 받으면 살 수 있는 것들

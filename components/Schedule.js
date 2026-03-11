@@ -43,6 +43,7 @@ export default function Schedule() {
           style={{
             color: 'var(--ink)',
             marginBottom: 8,
+            textAlign: 'center',
           }}
         >
           FOUNDLOOP — LOOP 1
@@ -53,6 +54,7 @@ export default function Schedule() {
             fontSize: 15,
             fontWeight: 300,
             marginBottom: 48,
+            textAlign: 'center',
           }}
         >
           2026년 3월 27일(금) ~ 29일(일)

@@ -22,6 +22,7 @@ export default function ProblemSection() {
             letterSpacing: '0.02em',
             textTransform: 'uppercase',
             marginBottom: 32,
+            textAlign: 'center',
           }}
         >
           이런 루프, 반복되고 있지 않나요?

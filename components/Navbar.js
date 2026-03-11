@@ -6,14 +6,14 @@ import { DATES } from '@/lib/constants';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [daysLeft, setDaysLeft] = useState(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener('scroll', onScroll, { passive: true });
+    setDaysLeft(Math.max(0, differenceInDays(new Date(DATES.deadline), new Date())));
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  const daysLeft = Math.max(0, differenceInDays(new Date(DATES.deadline), new Date()));
 
   return (
     <nav
@@ -52,17 +52,19 @@ export default function Navbar() {
 
       {/* Right side */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
-        <span
-          className="navbar-dday"
-          style={{
-            color: 'var(--stone)',
-            fontSize: 13,
-            fontWeight: 300,
-            letterSpacing: 'var(--ls-normal)',
-          }}
-        >
-          마감까지 D-{daysLeft}일
-        </span>
+        {daysLeft !== null && (
+          <span
+            className="navbar-dday"
+            style={{
+              color: 'var(--stone)',
+              fontSize: 13,
+              fontWeight: 300,
+              letterSpacing: 'var(--ls-normal)',
+            }}
+          >
+            마감까지 D-{daysLeft}일
+          </span>
+        )}
 
         {/* CTA */}
         <a

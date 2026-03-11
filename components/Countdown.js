@@ -64,14 +64,31 @@ function Separator() {
 }
 
 export default function Countdown() {
-  const [remaining, setRemaining] = useState(() => getTimeRemaining(DATES.deadline));
+  const [mounted, setMounted] = useState(false);
+  const [remaining, setRemaining] = useState(null);
 
   useEffect(() => {
+    setMounted(true);
+    setRemaining(getTimeRemaining(DATES.deadline));
     const id = setInterval(() => {
       setRemaining(getTimeRemaining(DATES.deadline));
     }, 1000);
     return () => clearInterval(id);
   }, []);
+
+  if (!mounted) {
+    return (
+      <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
+        <Segment value={0} label="DAYS" />
+        <Separator />
+        <Segment value={0} label="HRS" />
+        <Separator />
+        <Segment value={0} label="MIN" />
+        <Separator />
+        <Segment value={0} label="SEC" />
+      </div>
+    );
+  }
 
   if (!remaining) {
     return (
