@@ -19,12 +19,12 @@ export default function TallyForm() {
       <iframe
         data-tally-src={`${BRAND.tallyFormUrl}?transparentBackground=1`}
         width="100%"
-        height="auto"
+        height="800"
         frameBorder="0"
         marginHeight="0"
         marginWidth="0"
         title="FOUNDLOOP LOOP 1 참가 신청"
-        style={{ border: 'none', minHeight: 520 }}
+        style={{ border: 'none' }}
       />
     </div>
   );

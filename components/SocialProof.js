@@ -42,7 +42,7 @@ export default function SocialProof() {
             marginBottom: 8,
           }}
         >
-          현재 12명 참가 신청
+          현재 12명 개인 참가 신청
         </p>
 
         {/* Badge */}
@@ -58,7 +58,7 @@ export default function SocialProof() {
             marginBottom: 40,
           }}
         >
-          팀원 찾는 중 8명 → 지금 신청하면 매칭 가능
+          개인 신청 → 킥오프에서 팀 매칭 · 지금 신청하면 매칭 가능
         </div>
 
         {/* Role distribution — individual bars */}

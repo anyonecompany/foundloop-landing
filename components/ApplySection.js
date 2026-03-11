@@ -3,9 +3,10 @@ import CopyButton from './CopyButton';
 import TallyForm from './TallyForm';
 
 const checklist = [
-  '아이디어 한 줄 정리',
-  'Claude / Cursor / v0 설치',
+  '아이디어 한 줄 정리 (없어도 OK)',
+  'Claude / ChatGPT / Cursor / v0 / Bolt 중 1개 이상 설치',
   'Discord 설치 (링크는 카톡으로 발송)',
+  '노트북 (또는 태블릿)',
 ];
 
 export default function ApplySection() {
@@ -28,6 +29,17 @@ export default function ApplySection() {
         >
           LOOP 1 참가 신청
         </h2>
+        <p
+          style={{
+            color: 'var(--stone)',
+            fontSize: 14,
+            fontWeight: 300,
+            textAlign: 'center',
+            marginBottom: 8,
+          }}
+        >
+          개인 단위 신청 → 킥오프에서 팀 매칭
+        </p>
         <p
           style={{
             color: 'var(--stone)',

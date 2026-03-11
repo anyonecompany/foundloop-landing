@@ -1,9 +1,9 @@
 'use client';
 
 const prizes = [
-  { label: 'Claude Pro 1년치', amount: '≈ 240,000원' },
-  { label: 'Cursor Pro 6개월치', amount: '≈ 180,000원' },
-  { label: 'ChatGPT Plus 3개월치', amount: '≈ 60,000원' },
+  { label: 'Claude Pro 1년치', amount: '≈ 340,000원' },
+  { label: 'Cursor Pro 6개월치', amount: '≈ 170,000원' },
+  { label: 'ChatGPT Plus 3개월치', amount: '≈ 80,000원' },
   { label: '남는 돈으로 커피챗 10번', amount: null },
 ];
 
@@ -115,6 +115,19 @@ export default function PrizeAnchor() {
             </div>
           ))}
         </div>
+
+        {/* Price note */}
+        <p
+          style={{
+            color: 'var(--stone)',
+            fontSize: 11,
+            fontWeight: 300,
+            marginBottom: 24,
+            opacity: 0.6,
+          }}
+        >
+          * 가격은 월 $20 기준, 환율 1,400원/USD 기준 추정치입니다.
+        </p>
 
         {/* Expected value message */}
         <p

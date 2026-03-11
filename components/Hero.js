@@ -32,7 +32,7 @@ export default function Hero() {
             marginBottom: 32,
           }}
         >
-          LOOP 1&nbsp; &middot;&nbsp; 2025.03.27 FRI &mdash; 03.29 SUN
+          LOOP 1&nbsp; &middot;&nbsp; 2026.03.27 FRI &mdash; 03.29 SUN
         </div>
 
         {/* Headline */}

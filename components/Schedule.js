@@ -55,7 +55,7 @@ export default function Schedule() {
             marginBottom: 48,
           }}
         >
-          2025년 3월 27일(금) ~ 29일(일)
+          2026년 3월 27일(금) ~ 29일(일)
         </p>
 
         <div style={{ position: 'relative', paddingLeft: 32 }}>
