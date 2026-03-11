@@ -87,9 +87,9 @@ export default function PrizeAnchor() {
         </p>
 
         {/* Prize grid */}
-        <div className="grid-2" style={{ marginBottom: 32 }}>
+        <div className="grid-2" style={{ maxWidth: 520, margin: '0 auto 32px', justifyItems: 'center' }}>
           {prizes.map((item, i) => (
-            <div key={i} style={{ display: 'flex', alignItems: 'baseline', gap: 8 }}>
+            <div key={i} style={{ display: 'flex', alignItems: 'baseline', gap: 8, justifyContent: 'center' }}>
               <span style={{ color: 'var(--sage)', fontSize: 15, fontWeight: 500 }}>
                 ✓
               </span>
@@ -128,6 +128,7 @@ export default function PrizeAnchor() {
             fontWeight: 300,
             marginBottom: 24,
             opacity: 0.6,
+            textAlign: 'center',
           }}
         >
           * 가격은 월 $20 기준, 환율 1,400원/USD 기준 추정치입니다.
