@@ -78,7 +78,7 @@ export default function Countdown() {
 
   if (!mounted) {
     return (
-      <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
+      <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', gap: 12 }}>
         <Segment value={0} label="DAYS" />
         <Separator />
         <Segment value={0} label="HRS" />
@@ -106,7 +106,7 @@ export default function Countdown() {
   }
 
   return (
-    <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
+    <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', gap: 12 }}>
       <Segment value={remaining.days} label="DAYS" />
       <Separator />
       <Segment value={remaining.hours} label="HRS" />
